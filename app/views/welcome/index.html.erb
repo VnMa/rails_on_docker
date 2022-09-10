@@ -1,3 +1,10 @@
-<h1>Welcome#index</h1>
+<h1>TODOS list</h1>
 
 <h2> it works </h2>
+
+<% @todos.each do |todo| %>
+    <p>
+    <%= todo.name %> | 
+    <%= todo.content %>
+    </p>
+<% end %>
